@@ -1,0 +1,182 @@
+
+/*-------GLOBAL STYLE------*/
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body{
+    color: #32322c;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+img{
+    width: 300px;
+}
+a{
+    color: rgb(189, 168, 65);
+}
+.button a{
+    color: rgb(230, 227, 222);
+    background: #0e2e4b;
+    padding: 8px;
+    border-radius:4px;
+    text-decoration: none;
+    display: inline-block;
+}
+.button a:hover{
+    background:rgba(14, 46, 75, 80%);
+}
+a:hover{
+    text-decoration: none;
+}
+.details h3 + p {
+    font-style: italic;
+}
+.details h3 ~ p {
+    margin: 0;
+}
+h3 {
+    margin-bottom: 0;
+}
+.divider > section{
+    padding: 25px 0;
+    border-bottom: 1px dashed #32322c;
+}
+.divider > section:last-of-type{
+    border-bottom: none;
+}
+
+/*-------PROFILE------*/
+header{
+    background: #0e2e4b;
+    color: rgb(230, 227, 222);
+}
+.content-wrap {
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+/*-------PROJECTS------*/
+.projects {
+    background: rgb(221, 221, 238);
+}
+.projects a {
+    color: rgb(230, 227, 222);
+    background: #0e2e4b;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.projects a:hover{
+    background:rgba(14, 46, 75, 80%);
+    
+}
+h1{
+    font-size: 100px;
+}
+h2{
+    font-size: 45px;
+    line-height: 1;
+}
+h1,h2 {
+    font-family: 'Caveat', cursive;
+    font-weight: 300;
+    margin: 0;
+}
+.project-work{
+    overflow: hidden;
+}
+h3{
+    margin: 0;
+}
+
+
+/*-------WORK EXPERIENCE------*/
+
+.work-experience{
+    background: rgb(184, 187, 192);
+}
+
+
+/*-------EDUCATION------*/
+.education{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/book.jpg);
+    color: rgb(230, 227, 222);
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 50px;
+}
+.education h2{
+    margin-bottom: 30px;
+}
+.education p{
+    width: 60%;
+}
+.ed{
+    margin-bottom: 20px;
+}
+.ed h3{
+    margin-bottom: 5px;
+}
+
+/*-------CONTACT INFO------*/
+footer{
+    background: rgb(33, 34, 34);
+    color: rgb(230, 227, 222);
+}
+.contact-list{
+    list-style: none;
+    padding: 0;
+    
+}
+.contact-list a{
+    display: inline-block;
+    padding: 15px;
+}
+
+/*-------RESPONSIVE------*/
+
+@media screen and (min-width:850px) {
+    header, footer{
+        text-align: center;
+    }
+    .project-work img {
+        float: left;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width:700px){
+    h1{
+        font-size: 75px;
+    }
+    h2{
+        font-size: 35px;
+    }
+    h1,h2{
+        line-height: 1.1;
+    }
+    .contact-list a{
+        padding: 5px;
+    }
+}
+
+@media screen and (min-width:650px){
+    .job-section{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+    .contact-list{
+        display: flex;
+        justify-content: center;
+    }
+
+
+}
